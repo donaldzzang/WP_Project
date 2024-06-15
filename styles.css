@@ -1,0 +1,298 @@
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 설정 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 로고 이미지 스타일 설정 */
+header .logo img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+/* 네비게이션 메뉴 스타일 설정 */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 메인 콘텐츠 스타일 설정 */
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 20px;
+    width: 100%;
+}
+
+/* 컨테이너 스타일 설정 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* 폼 스타일 설정 */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background: #5cb85c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+.button {
+    display: inline-block;
+    background: #0275d8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #025aa5;
+}
+
+/* 로그아웃 버튼 스타일 설정 */
+.logout-button, .login-button {
+    padding: 5px 10px;
+}
+
+/* 메시지 스타일 설정 */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.success {
+    color: green;
+    background-color: #dff0d8;
+}
+
+.error {
+    color: red;
+    background-color: #f2dede;
+}
+
+/* 책 목록 스타일 설정 */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    width: calc(33.333% - 20px); /* 가로로 3개 배치 */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* 검색 제안 목록 스타일 설정 */
+.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+s.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* 설명 박스 스타일 설정 */
+.description-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* 텍스트가 박스를 넘지 않도록 함 */
+    overflow-wrap: break-word;
+    max-width: 100%; /* 박스의 최대 너비 설정 */
+}
+
+/* 좋아요 박스 스타일 설정 */
+.like-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* 좋아요 폼 스타일 설정 */
+.like-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 좋아요 버튼 스타일 설정 */
+button.like-button {
+    background: #888;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+button.like-button:hover {
+    background: #555;
+}
+
+button.like-button.liked {
+    transform: scale(1.2);
+}
+
+/* 좋아요 아이콘 스타일 설정 */
+span.like-icon {
+    font-size: 16px;
+}
+
+span.likes-count {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/* 댓글 박스 스타일 설정 */
+.comments-box {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.comment-form {
+    margin-bottom: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* 반응형 디자인 설정 */
+@media (max-width: 768px) {
+    .book-item {
+        width: calc(50% - 20px); /* 가로로 2개 배치 */
+    }
+}
+
+@media (max-width: 480px) {
+    .book-item {
+        width: 100%; /* 가로로 1개 배치 */
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    input[type="submit"], .logout-button, .login-button, .button {
+        width: 100%;
+        text-align: center;
+    }
+}
